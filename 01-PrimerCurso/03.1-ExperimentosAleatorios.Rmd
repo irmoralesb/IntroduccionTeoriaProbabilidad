@@ -1,0 +1,32 @@
+---
+title: "El Modelo Matemático"
+output: github_document
+---
+
+## Experimentos Aleatorios
+
+
+**El modelo**: Es solo una aproximación del sistema real y está sujeto siempre a comprobación.  
+**Experimento**: Un experimento es cualquier proceso que conduce a un resultado específico.  
+**Experimento Aleatorio:** consideraremos todos aquellos experimentos en los cuales, una vez definidas las condiciones en que se realizan, su resultado *no queda únicamente determinado.*  
+**Experimento Determinado:** lado consideraremos todos aquellos experimentos en los cuales, una vez definidas todas las condiciones bajo las cuales se realizan, su resultado queda únicamente determinado.  
+**Realización de un experimento aleatorio**: A cada repetición particular de un experimento aleatorio la llamaremos una realización de éste.  
+
+
+## Eventos
+
+**Propiedad relativa a un experimento aleatorio**: Diremos que una propiedad es relativa a un experimento aleatorio si una vez realizado éste podemos decir si se presenta o no.  
+**Eventos**: Un evento es una propiedad relativa a un experimento aleatorio.  
+**Ocurrencia de un evento**:Se dice que un evento ocurre al realizar un experimento aleatorio si la propiedad que lo caracteriza se presenta en esa realización.  
+
+
+## Principio de Regularidad de las frecuencias
+
+
+**Principio de regularidad de las frecuencias**: Entenderemos la fracción que resulta de dividir el número de veces que el evento ocurre en una serie de realizaciones del experimento entre el número total de veces que el experimento se realiza en esa serie. Este principio no es un principio absoluto que se cumple en cualquier serie de repeticiones de un experimento aleatorio.  
+
+El principio de regularidad de las frecuencias debe interpretarse con cuidado. Expresa que la frecuencia con que se presenta cada posible resultado de un experimento aleatorio, en una serie grande de realizaciones, se mantiene aproximadamente constante, pero, una eventual desviación de esa constante, si bien es algo que ocurre raramente, es perfectamente aceptable.
+
+
+## El Concepto de Probabilidad
+

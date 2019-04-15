@@ -1,0 +1,45 @@
+---
+title: "Notación"
+output: github_document
+#output: html_document
+---
+
+Notación    |    Significado
+------------|-----------------
+$$A \cup B $$     |Unión de los conjuntos A y B 
+$$A \cap B$$     | Intersección de los conjuntos A y B
+$$\cup_{k=1}^n A_k$$   | Unión de los conjuntos A1,..., An 
+$$\cap_{k=1}^n A_k$$   | Intersección de los conjuntos A1,..., An
+$$A^c$$        | Complemento del conjunto A
+$$A × B$$       | Producto cartesiano de los conjuntos A y B
+$$A \subset B$$      | El conjunto A está contenido en el conjunto B 
+$$A \supset B$$      |El conjunto A contiene al conjunto B 
+$$\emptyset $$           | Conjunto vacío
+$$N$$           | Conjunto de los números naturales 
+$$Z$$           | Conjunto de los números enteros 
+$$R$$           | Conjunto de los números reales 
+$$\overline{R}$$           | R ∪ {−∞,∞} 
+{n,..., m}  | Conjunto de números enteros entre n y m inclusive 
+{n, n + 1...} | Conjunto de números enteros mayores o iguales a n
+(a, b)      | Intervalo abierto {x ∈ R |a < x < b} 
+[a, b]      | Intervalo cerrado {x ∈ R |a ≤ x ≤ b} (
+a, b]       | Intervalo semiabierto {x ∈ R |a < x ≤ b}
+[a, b)      | Intervalo semiabierto {x ∈ R |a ≤ x < b} 
+x · y       | Producto punto de los vectores x y y 
+$$\|x\|$$         | Norma del vector x 
+|x|         | Valor absoluto del número real x 
+[[x]]       | Mayor entero menor o igual a x
+$$\overline{z}$$          | Conjugado del número complejo z 
+min(a, b)   | Mínimo entre a y b
+max(a, b)   | Máximo entre a y b
+$$x^+$$          | max(x, 0) 
+$$x^−$$          | max(−x, 0) 
+$$\sum_{k=1}^n x_k$$   | Suma de los números x1,..., xn 
+$$\prod_{k=1}^n x_k$$   | Producto de los números x1,..., xn 
+ln x        | Logaritmo natural de x
+$$\binom{n}{k}$$         | Combinaciones de n elementos tomados de k en k
+g ◦ f       | Composición de las functiones *f* y *g*
+$$f: A \to B$$   | Función definida sobre el conjunto A, con valores en el conjunto B 
+$$x \to α$$        | x tiende al valor α (caracter no encontrado aun para LatEx,debe ser flecha pero linea curvada )
+
+
