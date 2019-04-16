@@ -112,16 +112,39 @@ Se pueden plantear unas reglas:
 
 **Ejercicio 1 Problema de los 3 jugadores** Tres jugadores —P, Q y R— juegan partidas por parejas, comenzando P contra Q. Quien gane una partida juega con el otro jugador, hasta que uno de los jugadores gane dos partidas consecutivas, ganando entonces el juego. Describa el espacio muestral de este juego.  
 
+$$\Omega = \{(P,P),(P,R,Q,P,P), (P,R,Q,P,R,Q,P,P),...\}$$
+$$\cup \{(P,R,Q,Q),(P,R,Q,P,R,Q,Q),.. \} $$
+$$\cup \{(P,R,R),(P,R,Q,P,R,R),..\} $$
+$$\cup \{(Q,Q),(Q,R,P,Q,Q),(Q,R,P,Q,R,P,Q,Q),...\}$$
+$$\cup \{(Q,R,R),(Q,R,P,Q,R,R),...\}$$
+$$\cup \{(Q,R,P,P),(Q,R,P,Q,R,P,P),...\}$$
 
 
+**Ejercicio 2** Un experimento aleatorio consiste en elegir al azar 3 números —a, b y c— en el intervalo [0, 1], para formar la ecuación $ax^2+bx+c = 0$. Sea A el evento ‘las dos raíces de la ecuación son reales y distintas’. Represente como un conjunto Ω al espacio muestral de este experimento y al evento A como un subconjunto de Ω.  
 
-**Ejercicio 2** Un experimento aleatorio consiste en elegir al azar 3 números —a, b y c— en el intervalo [0, 1], para formar la ecuación ax2+bx+c = 0. Sea A el evento ‘las dos raíces de la ecuación son reales y distintas’. Represente como un conjunto Ω al espacio muestral de este experimento y al evento A como un subconjunto de Ω.  
-
+$$\Omega = \{(a,b,c) \in \R^3 : 0 \leq a \leq 1, 0\leq b \leq 1, 0 \leq c \leq 1\} $$
+$$A = \{(a,b,c) \in \Omega : b^2 - 4ac > 0 \} $$
 
 **Ejercicio 3** Dos personas, P y Q, juegan un juego de azar, el cual consiste en ir lanzando un par de dados por turnos, comenzando por P, de tal manera que, si P obtiene una suma igual a 7, se acaba el juego, ganando P, mientras que, si Q obtiene una suma igual a 6, se acaba el juego, ganando Q. Sea A el evento ‘el jugador P gana el juego’. Represente como un conjunto Ω al espacio muestral de este juego y al evento A como un subconjunto de Ω.
 
+$$ \Omega = \{(P), (\overline{P,Q},P),(\overline{P,Q,P,Q},P)\,...\} $$
+$$ \cup \{(\overline{P},Q), (\overline{P,Q,P},Q),(\overline{P,Q,P,Q,P},Q)\,...\} $$
+
+$$ A = \{(P), (\overline{P,Q},P),(\overline{P,Q,P,Q},P)\,...\}$$
 
 **Ejercicio 4** Sean A y B dos eventos y sean E y F los eventos ‘ocurre exactamente uno de los dos eventos A y B’ y ‘ocurre a lo más uno de los dos eventos A y B’, respectivamente. Exprese los eventos E y F en términos de A y B.  
 
+$$ E = (A \cup B) - (A \cap B)  $$
+$$ F = (\overline{A \cap B})$$
 
-**Ejercicio 5** Un trabajador produce n partes de un artículo. Sea Ai el evento ‘la i-ésima parte está defectuosa’. Exprese en términos de los Ai cada uno de los siguientes eventos: a) ninguna de las n partes está defectuosa, b) al menos una de las n partes está defectuosa, c) exactamente una de las n partes está defectuosa.
+**Ejercicio 5** Un trabajador produce n partes de un artículo. Sea $A_i$ el evento ‘la i-ésima parte está defectuosa’. Exprese en términos de los $A_i$ cada uno de los siguientes eventos:  
+      
+    a) ninguna de las n partes está defectuosa,
+$$\bigcap_{i=1}^n A_i^c $$
+
+    b) al menos una de las n partes está defectuosa,
+    
+$$\bigcap_{i=1}^n A_i $$
+    c) exactamente una de las n partes está defectuosa.
+
+$$\bigcup_{i=1}^n [\, A_i \cap (\bigcap_{j \neq i} A_j^c) ]\,  $$
