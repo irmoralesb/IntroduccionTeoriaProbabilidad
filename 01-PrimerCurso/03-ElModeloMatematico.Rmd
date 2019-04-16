@@ -1,6 +1,8 @@
 ---
 title: "El Modelo Matemático"
-output: github_document
+output: 
+  github_document:
+    pandoc_args: --webtex
 ---
 
 ## Experimentos Aleatorios
@@ -54,7 +56,7 @@ Un ejemplo para mostrar la nomenclatura de un espacio muestral sea un conjunto i
 
 ## Representación de Eventos
 
-**Resultados favorables a un evento**Ñ Los resultados favorables a un evento A, relativo a un experimento aleatorio, son todos aquellos posibles resultados del experimento de los cuales se deduce la ocurrencia de A.
+**Resultados favorables a un evento**: Los resultados favorables a un evento A, relativo a un experimento aleatorio, son todos aquellos posibles resultados del experimento de los cuales se deduce la ocurrencia de A.
 
 **Equivalencia de eventos**: Dos eventos son equivalentes si la ocurrencia de cualquiera de ellos implica la ocurrencia del otro en cualquier realización del experimento.
 
