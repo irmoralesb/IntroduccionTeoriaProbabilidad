@@ -151,3 +151,47 @@ sprintf("Probabilidad: (22/45) %f", result)
 
 Probabilidad Condicional
 ------------------------
+
+En ocasiones un experimento aleatorio está compuesto por varios experimentos, también aleatorios, los cuales se realizan uno después del otro. Un ejemplo típico de esta situación se obtiene al considerar n elecciones sucesivas, todas ellas al azar, de elementos de una determinada población. El resultado de cada parte puede ser independiente o depender de las partes anteriores. En general en estos casos lo que se tiene a la mano para iniciar el proceso de calcular probabilidades son probabilidades de eventos relativos a cada parte del experimento, condicionadas a lo que haya ocurrido en las primeras partes. Este tipo de probabilidades es conocido con el nombre de **probabilidades condicionales**.
+
+**Ejemplo** Una urna contiene 3 bolas rojas y 6 bolas negras. Un experimento aleatorio consiste en dos partes, en la primera, se selecciona al azar una bola de la urna y se deja fuera de ésta, en la segunda, se selecciona al azar una de las bolas restantes en la urna. Denotemos por ![B\_1, B\_2, B\_3, B\_4, B\_5, B\_6, B\_7, B\_8, B\_9](https://latex.codecogs.com/png.latex?B_1%2C%20B_2%2C%20B_3%2C%20B_4%2C%20B_5%2C%20B_6%2C%20B_7%2C%20B_8%2C%20B_9 "B_1, B_2, B_3, B_4, B_5, B_6, B_7, B_8, B_9") las 9 bolas de la urna. Cada posible resultado del experimento aleatorio puede entonces representarse mediante una pareja (![B\_i, B\_j](https://latex.codecogs.com/png.latex?B_i%2C%20B_j "B_i, B_j")), con i ![\\neq](https://latex.codecogs.com/png.latex?%5Cneq "\neq") j, en donde ![B\_i](https://latex.codecogs.com/png.latex?B_i "B_i") representa el resultado de la primera elección y ![B\_j](https://latex.codecogs.com/png.latex?B_j "B_j") el de la segunda. El espacio muestral consta así de 72 elementos.
+
+Como la elección de la primera bola se realiza al azar, cualquiera de las bolas en la urna tiene la misma probabilidad de ser elegida, de manera que si, para i ∈ {1,..., 9}, definimos los siguientes eventos:
+
+![B\_1^i](https://latex.codecogs.com/png.latex?B_1%5Ei "B_1^i") : En la primera elección se obtiene la bola ![B\_i](https://latex.codecogs.com/png.latex?B_i "B_i"), se tiene:
+
+![
+B\_i^1 = \\{ (B\_i,B\_1),(B\_i,B\_2),... (B\_i,B\_{i-1}),(B\_i,B\_{i+1}),...(B\_i,B\_9)  \\}
+](https://latex.codecogs.com/png.latex?%0AB_i%5E1%20%3D%20%5C%7B%20%28B_i%2CB_1%29%2C%28B_i%2CB_2%29%2C...%20%28B_i%2CB_%7Bi-1%7D%29%2C%28B_i%2CB_%7Bi%2B1%7D%29%2C...%28B_i%2CB_9%29%20%20%5C%7D%0A "
+B_i^1 = \{ (B_i,B_1),(B_i,B_2),... (B_i,B_{i-1}),(B_i,B_{i+1}),...(B_i,B_9)  \}
+")
+
+y ![P(B\_i^1) = \\frac{1}{9}](https://latex.codecogs.com/png.latex?P%28B_i%5E1%29%20%3D%20%5Cfrac%7B1%7D%7B9%7D "P(B_i^1) = \frac{1}{9}") para toda i
+
+Por otra parte, una vez seleccionada la primera bola, la elección de la segunda se realiza también al azar, de manera que todas las bolas restantes tienen la misma probabilidad de ser elegidas. Esto significa que, para cada i ∈ {1,..., 9}, las probabilidades de cada uno de los 8 posibles resultados que componen el evento ![B\_1](https://latex.codecogs.com/png.latex?B_1 "B_1") i, son iguales. Con esta información se puede obtener la probabilidad de cada uno de los posibles resultados del experimento pues siendo 8 los elementos que componen cada ![B\_1^i](https://latex.codecogs.com/png.latex?B_1%5Ei "B_1^i") , teniendo todos ellos la misma probabilidad y la suma de ellas siendo igual a ![\\frac{1}{9}](https://latex.codecogs.com/png.latex?%5Cfrac%7B1%7D%7B9%7D "\frac{1}{9}"), se concluye que la probabilidad de cada uno de ellos es ![\\frac{1}{72}](https://latex.codecogs.com/png.latex?%5Cfrac%7B1%7D%7B72%7D "\frac{1}{72}").
+
+Así se puede definir:
+
+![
+P(B\_j^2 | B\_i^1) = \\frac{1}{8} para j \\in \\{1,\\dots,9 \\} j \\neq i
+](https://latex.codecogs.com/png.latex?%0AP%28B_j%5E2%20%7C%20B_i%5E1%29%20%3D%20%5Cfrac%7B1%7D%7B8%7D%20para%20j%20%5Cin%20%5C%7B1%2C%5Cdots%2C9%20%5C%7D%20j%20%5Cneq%20i%0A "
+P(B_j^2 | B_i^1) = \frac{1}{8} para j \in \{1,\dots,9 \} j \neq i
+")
+
+Por lo que se ve que :
+
+![P(B\_i^1)](https://latex.codecogs.com/png.latex?P%28B_i%5E1%29 "P(B_i^1)") y ![P(B\_j^2 | B\_i^1)](https://latex.codecogs.com/png.latex?P%28B_j%5E2%20%7C%20B_i%5E1%29 "P(B_j^2 | B_i^1)") es posible obtener ![P(B\_i^1 \\cap B\_j^2) = P(B\_i,B\_j)](https://latex.codecogs.com/png.latex?P%28B_i%5E1%20%5Ccap%20B_j%5E2%29%20%3D%20P%28B_i%2CB_j%29 "P(B_i^1 \cap B_j^2) = P(B_i,B_j)")
+
+**Generalizando**
+
+Dado que el evento A ocurre, un evento B ocurre si y sólo si ocurre ![A \\cap B](https://latex.codecogs.com/png.latex?A%20%5Ccap%20B "A \cap B"), es decir, se debe de tener ![P(B | A) = P(A \\cap B | A)](https://latex.codecogs.com/png.latex?P%28B%20%7C%20A%29%20%3D%20P%28A%20%5Ccap%20B%20%7C%20A%29 "P(B | A) = P(A \cap B | A)"), de manera que el problema se reduce a determinar cuál es la probabilidad de un subconjunto del espacio muestral restringido, con relación a éste.
+
+*Probabilidad condicional* Sean A y B dos eventos y supongamos P(A) &gt; 0, se define la probabilidad condicional de B, dada la ocurrencia de A, P(B|A), mediante la fórmula:
+
+![
+P(B|A)
+](https://latex.codecogs.com/png.latex?%0AP%28B%7CA%29%0A "
+P(B|A)
+")
+
+ =
